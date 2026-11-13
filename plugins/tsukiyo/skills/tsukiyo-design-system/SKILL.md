@@ -1,6 +1,6 @@
 ---
 name: tsukiyo-design-system
-description: "v1.0.0 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440): каталог компонентов, токены цвета/отступов/радиусов, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, toast, empty/error/loading state; when choosing a component, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай макет, добавь состояние ошибки."
+description: "v1.0.1 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440): каталог компонентов, токены цвета/отступов/радиусов, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, toast, empty/error/loading state; when choosing a component, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай макет, добавь состояние ошибки."
 ---
 
 # Дизайн-система Tsukiyo — как собирать макеты
@@ -36,7 +36,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 8. **Загрузка — луна**: `Moon/Loader` или `Button State=Loading`. Не использовать стандартные спиннеры.
 9. **Форматы**: цены в тенге — `4 990 ₸` (пробел-разделитель тысяч, знак после числа); даты — `DD.MM.YYYY`.
 10. **Фокус** всегда виден: `State=Focus` у Input/Button даёт `Glow/Focus`.
-
+11. Перед созданием экрана проверь, нет ли уже фрейма с таким именем `Module / Screen / State`. Есть — правь его или спроси, заменять ли; при замене перенеси на новый экран все входящие и исходящие связи прототипа, потом удали старый. Причина: дубли путают флоу и ломают прототип.
 ## Каталог: что когда брать
 
 | Задача | Компонент | По умолчанию |
