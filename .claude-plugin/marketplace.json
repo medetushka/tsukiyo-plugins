@@ -1,0 +1,12 @@
+{
+  "name": "tsukiyo-plugins",
+  "description": "Мои плагины для дизайна в Figma",
+  "owner": { "name": "medetushka" },
+  "plugins": [
+    {
+      "name": "tsukiyo",
+      "source": "./plugins/tsukiyo",
+      "description": "Дизайн-система Tsukiyo: правила сборки макетов в Figma, каталог компонентов, токены"
+    }
+  ]
+}

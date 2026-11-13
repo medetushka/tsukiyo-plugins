@@ -1,0 +1,7 @@
+{
+  "name": "tsukiyo",
+  "description": "Дизайн-система Tsukiyo: правила сборки макетов в Figma, каталог компонентов, токены",
+  "version": "1.0.0",
+  "author": { "name": "medetushka" },
+  "keywords": ["figma", "design-system", "tsukiyo"]
+}
