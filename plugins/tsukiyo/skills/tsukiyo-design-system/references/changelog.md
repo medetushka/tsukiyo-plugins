@@ -37,3 +37,8 @@
 
 * Illustration/Night: убраны красные линии поверх луны — луна чистая, как в оригинальной Tsukihime.
 * color/crimson: только акценты (ошейник Ёру), не поверх луны.
+
+## 1.3.0 — 14.11.2026
+
+* Ресерч Material 3, Apple HIG, Carbon, Polaris, Atlassian, Wonder Blocks и библиотек Figma Community (Material 3 Design Kit, Simple Design System) — references/research.md.
+* Правила 16–21: число пунктов Tab bar, зазор между тач-зонами, Toast по одному, тексты и места ошибок, Bottom sheet или Modal, Empty state.
