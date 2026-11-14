@@ -42,3 +42,15 @@
 
 * Ресерч Material 3, Apple HIG, Carbon, Polaris, Atlassian, Wonder Blocks и библиотек Figma Community (Material 3 Design Kit, Simple Design System) — references/research.md.
 * Правила 16–21: число пунктов Tab bar, зазор между тач-зонами, Toast по одному, тексты и места ошибок, Bottom sheet или Modal, Empty state.
+
+## 1.3.1 — 14.11.2026
+
+Прогон тестовых задач 4–12 на 1.3.0: 7 прошли, 2 не прошли из-за мастеров, 3 замечания к правилам.
+
+* Button Type=Text: высота 44 (была 32 — меньше тач-зоны).
+* Modal: крестик заменён на иконку Navigation / Close в зоне 44 × 44.
+* Empty state: текст растягивается по ширине (на мобилке вылезал за край).
+* Новый компонент Video player; шаблон Mobile lesson ссылается на него.
+* Шаблон Mobile list: App bar Main для корневых экранов вкладок.
+* Header: инициалы примера «АС»; правило — активный пункт навигации = текущий раздел.
+* Правило 9: только вымышленные данные; настоящие имя и почта убраны с 30+ экранов.

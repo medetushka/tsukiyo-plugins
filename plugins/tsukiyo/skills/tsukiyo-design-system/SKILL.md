@@ -1,6 +1,6 @@
 ---
 name: tsukiyo-design-system
-description: "v1.3.0 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
+description: "v1.3.1 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
 ---
 
 # Дизайн-система Tsukiyo — как собирать макеты
@@ -46,7 +46,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 6. **Одно главное действие на экран** — `Button Type=Primary`. Второе действие — `Secondary` или `Text`. Удаление/выход — `Destructive`.
 7. **Ошибка поля — фирменная «трещина»**: `Input State=Error` или `Text area State=Error` (ломаная красная линия под полем + `Glow/Error`) + текст ошибки в helper. Не заменять обычной красной рамкой.
 8. **Загрузка — луна**: `Moon/Loader` или `Button State=Loading`. Не использовать стандартные спиннеры.
-9. **Форматы**: цены в тенге — `4 990 ₸` (пробел-разделитель тысяч, знак после числа); даты — `DD.MM.YYYY`.
+9. **Форматы и данные**: цены в тенге — `4 990 ₸` (пробел-разделитель тысяч, знак после числа); даты — `DD.MM.YYYY`. Примеры данных только вымышленные: имя «Айгерим С.», инициалы «АС», email `student@tsukiyo.kz`; никаких настоящих имён и почт. Нашёл настоящие в копируемом экране — замени.
 10. **Фокус** всегда виден: `State=Focus` у Input/Text area/Button даёт `Glow/Focus`.
 11. Перед созданием экрана проверь, нет ли уже фрейма с таким именем `Module / Screen / State`. Есть — правь его или спроси, заменять ли; при замене перенеси на новый экран все входящие и исходящие связи прототипа, потом удали старый. Причина: дубли путают флоу и ломают прототип.
 12. **Иконки только из пака** (`references/icons.md`), outline 1.5, 24 × 24. В компонентах — через свойство Instance swap, цвет — override обводки переменной `color/*`. Не рисовать иконки векторами и не брать из других паков.
@@ -83,7 +83,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 | Переключение разделов страницы | Tabs (из Tab) | одна Tab с State=Active |
 | Шаги онбординга, прогресс курса | Progress bar | Value=25/33/50/66/68/100 |
 | Логотип | Logo | Type=Full / Mark |
-| Шапка десктопа | Header | Type=Guest до входа, Type=User после |
+| Шапка десктопа | Header | Type=Guest до входа, Type=User после; активный пункт навигации = текущий раздел |
 | Подвал десктопа | Footer | — |
 | Верх мобильного экрана | Status bar + App bar | App bar Type=Main на корневых, Type=Back на вложенных |
 | Нижняя навигация мобилки | Tab bar (из Tab bar/Item) | 4 пункта: Главная, Каталог, Мои курсы, Профиль |
@@ -91,6 +91,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 | Курс в каталоге | Course card, Type=Catalog | — |
 | «Продолжить обучение» на Home | Course card, Type=Continue | — |
 | Урок в списке курса | Lesson item | Completed / Current / Default / Locked |
+| Видеоурок | Video player | десктоп 720 × 405; мобилка — FILL по ширине, высота = ширина × 9/16 (не Scale, иначе мельчает текст) |
 | Достижение | Achievement card | Unlocked / Locked |
 | Отзыв о курсе | Review card | Avatar + Rating + текст + дата |
 | Цифра прогресса | Stat card | Icon через Instance swap |

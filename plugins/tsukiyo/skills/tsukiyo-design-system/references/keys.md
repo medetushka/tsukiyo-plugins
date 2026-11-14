@@ -114,3 +114,9 @@ Button, Chip, Tab и Input уже связаны interactive components: hover �
 | Компонент | Тип | Node id | Key | Свойства |
 |---|---|---|---|---|
 | Mascot (Ёру) | set (4) | `99:5392` | `1a48f70eb3aa97748ad0d73b594d8ad726dee51d` | Mood: Happy, Thinking, Sad, Sleeping · 120 × 120, масштабировать целиком (Scale): 120 / 64 / 40 |
+
+### Видео
+
+| Компонент | Тип | Node id | Key | Свойства |
+|---|---|---|---|---|
+| Video player | component | `107:5909` | `8489a79f1b3848f79414c5e17d99858e8b5a3c90` | Title, Time (text) · 720 × 405 · Play 64, Progress bar, время |

@@ -24,8 +24,8 @@
 |---|---|
 | Mobile page | вертикальный auto layout: Status bar → App bar (Main на корневых, Back на вложенных) → Content (padding `layout/margin`, gap `spacing/24`) → Tab bar в конце; Chat button абсолютом в правом нижнем углу, 16 над Tab bar |
 | Mobile auth | Status bar → Logo Mark по центру → H1 → Input-ы во всю ширину → Primary во всю ширину → Text-ссылки; без Illustration/Night и без Tab bar |
-| Mobile list | App bar Back + Input Search → Chip-фильтры в строку → Course card 1 в ряд → Button Secondary «Показать ещё» вместо Pagination |
-| Mobile lesson | App bar Back (название урока) → видео/вопрос во всю ширину → Progress bar → Primary снизу; Tab bar скрыт |
+| Mobile list | App bar Main, если это корневой экран вкладки Tab bar (каталог); App bar Back — если список вложенный → Input Search → Chip-фильтры в строку → Course card 1 в ряд → Button Secondary «Показать ещё» вместо Pagination |
+| Mobile lesson | App bar Back (название урока) → Video player или вопрос во всю ширину → Progress bar → Primary снизу; Tab bar скрыт |
 | Mobile confirm | экран + `color/scrim` + Bottom sheet снизу (OVERLAY, позиция Bottom) |
 
 Примеры: `Sign in / Login / Default · Mobile` (`97:5205`) — шаблон Mobile auth; `Home / Dashboard / Default · Mobile` (`95:5253`) — Status bar, App bar Main, приветствие H1, Course card Continue, 2 Stat card, Achievement card ×2, Tab bar, Chat button.

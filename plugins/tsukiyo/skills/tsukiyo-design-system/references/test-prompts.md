@@ -22,14 +22,14 @@
 | 1 | Собери экран `Sign in / Forgot password / Default` на десктопе | Auth split: Illustration/Night слева, карточка 480 справа | 1.0.0 (после правки — 1.0.1, дубль экрана) |
 | 2 | Собери мобильную версию `Sign in / Login / Default` | Logo Mark, кнопки во всю ширину, без иллюстрации и Tab bar | 1.1.0 (после правки — 1.1.1, сетка и имя) |
 | 3 | Собери мобильный `Home / Dashboard / Default` | Status bar + App bar Main, Tab bar с активной «Главная», Chat button над Tab bar | 1.1.0 |
-| 4 | Собери мобильный каталог `Offer / Catalog / Default · Mobile` с фильтрами | Input Search, Chip-фильтры, Course card 1 в ряд, «Показать ещё» вместо Pagination | — |
-| 5 | Собери десктопный каталог с 8 курсами | Course card 4 в ряд по сетке, Pagination внизу | — |
-| 6 | Собери мобильный экран урока с вопросом к преподавателю | App bar Back, Text area со счётчиком, Tab bar скрыт | — |
-| 7 | Собери мобильное подтверждение выхода | Bottom sheet поверх `color/scrim`, Destructive + Text | — |
-| 8 | Собери профиль с достижениями и отзывами на десктопе | Avatar L, Achievement card Unlocked/Locked, Review card с Rating | — |
-| 9 | Собери пустой «Мои курсы» на мобилке | Empty state, Mascot Mood=Sleeping, одно действие | — |
-| 10 | Собери ошибку оплаты на мобилке | Alert Error над формой + трещина у поля карты; текст «что + как исправить»; не Toast | — |
-| 11 | Собери мобильное подтверждение удаления аккаунта | Modal по центру (не Bottom sheet), Destructive + Text | — |
-| 12 | Покажи 3 уведомления подряд после сохранения | Toast по одному, не стопкой | — |
+| 4 | Собери мобильный каталог `Offer / Catalog / Default · Mobile` с фильтрами | Input Search, Chip-фильтры, Course card 1 в ряд, «Показать ещё» вместо Pagination | 1.3.0 (App bar Main, а не Back: каталог — корневой экран вкладки) |
+| 5 | Собери десктопный каталог с 8 курсами | Course card 4 в ряд по сетке, Pagination внизу | 1.3.0 (в существующий экран добавлена Pagination) |
+| 6 | Собери мобильный экран урока с вопросом к преподавателю | App bar Back, Text area со счётчиком, Tab bar скрыт | 1.3.1 (добавлен Video player) |
+| 7 | Собери мобильное подтверждение выхода | Bottom sheet поверх `color/scrim`, Destructive + Text | 1.3.1 (в 1.3.0 «Отмена» была 32 px; Button Type=Text теперь 44) |
+| 8 | Собери профиль с достижениями и отзывами на десктопе | Avatar L, Achievement card Unlocked/Locked, Review card с Rating | 1.3.0 |
+| 9 | Собери пустой «Мои курсы» на мобилке | Empty state, Mascot Mood=Sleeping, одно действие | 1.3.0 (обход: тексты Empty state растянуты в инстансе) |
+| 10 | Собери ошибку оплаты на мобилке | Alert Error над формой + трещина у поля карты; текст «что + как исправить»; не Toast | 1.3.0 |
+| 11 | Собери мобильное подтверждение удаления аккаунта | Modal по центру (не Bottom sheet), Destructive + Text | 1.3.1 (в 1.3.0 крестик Modal был вектором 16 px; теперь Navigation / Close в зоне 44) |
+| 12 | Покажи 3 уведомления подряд после сохранения | Toast по одному, не стопкой | 1.3.0 |
 
 После прогона в колонку «Версия» пишут номер версии, на которой задача прошла без замечаний. Ошибка → новое правило → новая версия (см. «Как дообучать скилл» в SKILL.md).
