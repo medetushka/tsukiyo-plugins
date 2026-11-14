@@ -24,6 +24,7 @@
 |---|---|
 | Mobile page | вертикальный auto layout: Status bar → App bar (Main на корневых, Back на вложенных) → Content (padding `layout/margin`, gap `spacing/24`) → Tab bar в конце; Chat button абсолютом в правом нижнем углу, 16 над Tab bar |
 | Mobile auth | Status bar → Logo Mark по центру → H1 → Input-ы во всю ширину → Primary во всю ширину → Text-ссылки; без Illustration/Night и без Tab bar |
+| Mobile onboarding | Status bar → App bar Back (шаг назад; на первом шаге без Back) → Progress bar → H1 → варианты во всю ширину (Chip с зазором ≥ 8 или Radio) → Primary «Далее» во всю ширину внизу. Text «Назад» не ставить — назад только в App bar; Tab bar нет. Выбор из длинного списка — Bottom sheet Type=Select |
 | Mobile list | App bar Main, если это корневой экран вкладки Tab bar (каталог); App bar Back — если список вложенный → Input Search → Chip-фильтры в строку → Course card 1 в ряд → Button Secondary «Показать ещё» вместо Pagination |
 | Mobile lesson | App bar Back (название урока) → Video player или вопрос во всю ширину → Progress bar → Primary снизу; Tab bar скрыт |
 | Mobile confirm | экран + `color/scrim` + Bottom sheet снизу (OVERLAY, позиция Bottom) |
