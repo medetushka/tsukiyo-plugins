@@ -128,5 +128,5 @@ Button, Chip, Tab и Input уже связаны interactive components: hover �
 | Checkbox | `30:21754` | `26ab66f4c8f6d018d74c290e63a425f08c8e73f3` | добавлено свойство State: Default, Error; высота ≥ 44; подпись переносится после 300 |
 | Radio | `40:2479` | `1f7eef1adb62b934943ef758da7389bbb1029a19` | State: Default, Disabled, Error; новое свойство Label (text); высота ≥ 44 |
 | Switch | `40:2496` | `e6b09009bc64ba6e618371bdaf7772c282152ebf` | новое свойство Label (text); высота ≥ 44 |
-| Bottom sheet | set `112:6348` | `015b461e68ec6176245c322efa9699eb3148137d` | теперь набор: Type=Confirm (`95:5238`), Type=Select (`112:6328`, список Radio + Primary «Применить») · Title, Text (text) |
+| Bottom sheet | set `112:6348` | `015b461e68ec6176245c322efa9699eb3148137d` | теперь набор: Type=Confirm (`95:5238`), Type=Select (`112:6328`, список Radio + Primary «Применить») · Title, Text (Confirm), Question (Select, по умолчанию «Выберите вариант») |
 | Button Type=Text | `30:21700` | — | высота 44 (с 1.3.1) |

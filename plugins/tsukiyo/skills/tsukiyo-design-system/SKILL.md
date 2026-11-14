@@ -1,6 +1,6 @@
 ---
 name: tsukiyo-design-system
-description: "v1.4.0 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
+description: "v1.4.1 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
 ---
 
 # Дизайн-система Tsukiyo — как собирать макеты
@@ -43,7 +43,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 3. **Никаких сырых значений.** Цвет — только переменные `color/*`, отступы и gap — `spacing/*` и `layout/*`, радиусы — `radius/*`, текст — стили `Tsukiyo/*`, тени и свечение — эффект-стили `Tsukiyo/Glow/*`, `Tsukiyo/Shadow/Card`. Нужна полупрозрачность — бери готовый альфа-токен (`color/text-a60`, `color/error-a10`…), а не opacity на заливке.
 4. **Примитивы (`moon/*`, `night/*`, `red/*`…) напрямую не использовать** — только через семантику `color/*`.
 5. **Заголовки — Cormorant Garamond** (`Tsukiyo/Display`, `H1`–`H3`), **весь UI-текст — Inter** (`Body`, `Small`, `Caption`, `Label`, `Button`). Не смешивать. Крупные числа и цены как акцент (Stat card, цена курса `12 900 ₸`, счётчик серии) — `H2`/`H3`, это не UI-текст; цены и числа в строках, списках и на кнопках — `Body`/`Label`.
-6. **Одно главное действие на экран** — `Button Type=Primary`. Второе действие — `Secondary` или `Text`. Удаление/выход — `Destructive`.
+6. **Одно главное действие на экран** — `Button Type=Primary`. Второе действие — `Secondary` или `Text`. Удаление/выход — `Destructive`. Когда открыт overlay (Modal или Bottom sheet поверх `color/scrim`), считается только его Primary: Primary экрана под затемнением не мешает, но в самом overlay Primary тоже одна.
 7. **Ошибка поля — фирменная «трещина»**: `Input State=Error` или `Text area State=Error` (ломаная красная линия под полем + `Glow/Error`) + текст ошибки в helper. Не заменять обычной красной рамкой.
 8. **Загрузка — луна**: `Moon/Loader` или `Button State=Loading`. Не использовать стандартные спиннеры.
 9. **Форматы и данные**: цены в тенге — `4 990 ₸` (пробел-разделитель тысяч, знак после числа); даты — `DD.MM.YYYY`. Примеры данных только вымышленные: имя «Айгерим С.», инициалы «АС», email `student@tsukiyo.kz`; никаких настоящих имён и почт. Нашёл настоящие в копируемом экране — замени.

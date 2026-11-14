@@ -2,7 +2,7 @@
 
 Скилл учит Claude собирать макеты в Figma на дизайн-системе **Tsukiyo** — учебной платформы в стиле «лунная ночь» (月夜). Десктоп 1440 и мобилка 390, тёмная тема, русский и казахский интерфейс.
 
-Автор: Karsakbayev Medet · файл Figma: «Karsakbayev Medet — Tsukiyo» · текущая версия: **1.4.0**
+Автор: Karsakbayev Medet · файл Figma: «Karsakbayev Medet — Tsukiyo» · текущая версия: **1.4.1**
 
 ![Мобильная главная, собранная по скиллу](docs/mobile-home.png)
 
@@ -75,3 +75,4 @@
 | 1.3.0 | ресерч Material 3, Apple HIG, Carbon, Polaris, Atlassian, Wonder Blocks | правила 16–21: Tab bar 3–5, зазор 8 между тач-зонами, Toast по одному, тексты ошибок, Bottom sheet или Modal, Empty state |
 | 1.3.1 | прогон тестов 4–12: мелкие тач-зоны в Bottom sheet и Modal, нет видеоплеера, реальное имя в примерах | Button Text 44, крестик из пака, Video player, правило о вымышленных данных |
 | 1.4.0 | прогон задач 13–20: нет списка выбора в Bottom sheet, нет ошибки у Checkbox/Radio, два «Назад» в онбординге, красный для неверного ответа | Bottom sheet Select, State=Error, шаблон Mobile onboarding, правила 22–24 |
+| 1.4.1 | перепрогон 13–20: подпись Checkbox Error не менялась, заголовок Select от Confirm, две Primary при открытой шторке | привязка Label, свойство Question, уточнение правила 6 |
