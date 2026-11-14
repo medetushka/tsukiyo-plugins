@@ -1,7 +1,7 @@
 # Tsukiyo plugins
 
 Скилл для Claude Code: сборка макетов в Figma на дизайн-системе Tsukiyo
-(edtech-платформа, ночь и луна, тёмная тема, десктоп 1440).
+(edtech-платформа, ночь и луна, тёмная тема, десктоп 1440 и мобилка 390).
 
 ## Установка
 
@@ -21,6 +21,7 @@
 
 - `plugins/tsukiyo/skills/tsukiyo-design-system/SKILL.md` — правила и каталог
 - `references/keys.md` — компоненты, node id и ключи
-- `references/tokens.md` — переменные, текстовые и эффект-стили
+- `references/icons.md` — иконки: имена, id и ключи
+- `references/tokens.md` — переменные, моды Desktop/Mobile, текстовые и эффект-стили
 - `references/patterns.md` — шаблоны экранов, состояния, прототип
 - `references/changelog.md` — история версий

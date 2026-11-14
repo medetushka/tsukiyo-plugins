@@ -1,9 +1,10 @@
 # Токены Tsukiyo — переменные и стили
 
-Две коллекции:
+Три коллекции:
 
 - **Tsukiyo** — семантика, одна мода `Night`. Используется во всех компонентах и макетах.
-- **Primitives** — палитра, одна мода `Value`. Напрямую не используется, только как значение для семантики.
+- **Primitives** — палитра, одна мода `Value`. Напрямую не используется, только как значение для семантики; скрыта от публикации.
+- **Platform** — размеры, которые отличаются на десктопе и мобилке, моды `Desktop` и `Mobile`. Мода ставится на корневой фрейм экрана.
 
 Привязка цвета: `figma.variables.setBoundVariableForPaint(paint, 'color', variable)` — возвращает новую заливку, её нужно присвоить. Отступы: `node.setBoundVariable('itemSpacing' | 'paddingLeft' | …, variable)`. Радиус: `setBoundVariable('topLeftRadius', …)` по всем углам.
 Импорт из библиотеки: `await figma.variables.importVariableByKeyAsync(KEY)`.
@@ -66,6 +67,24 @@
 | radius/lg | 20 | `19c439fac0cbdeedd81c61ab6be8598f3b9f138c` |
 | radius/full | 999 | `0eab35989f97fa2b5b18e74d6eb1bd9f2cb7fbe2` |
 
+## Platform (Desktop / Mobile)
+
+Коллекция `VariableCollectionId:90:5113`, моды `Desktop` (`90:0`) и `Mobile` (`90:1`).
+Переключение: `frame.setExplicitVariableModeForCollection(collection, '90:1')` на корневом фрейме мобильного экрана.
+
+| Переменная | Desktop | Mobile | Где |
+|---|---|---|---|
+| type/display/size · line | 56 · 64 | 40 · 48 | стиль Tsukiyo/Display |
+| type/h1/size · line | 36 · 44 | 28 · 36 | стиль Tsukiyo/H1 |
+| type/h2/size · line | 28 · 34 | 24 · 32 | стиль Tsukiyo/H2 |
+| type/h3/size · line | 22 · 28 | 20 · 28 | стиль Tsukiyo/H3 |
+| layout/margin | 80 | 16 | боковые поля страницы (padding контента) |
+| layout/gutter | 24 | 16 | gap между карточками и колонками |
+| layout/section-gap | 64 | 32 | gap между крупными блоками |
+| size/control | 48 | 48 | высота кнопок и полей |
+| size/touch | 44 | 44 | минимальная тач-зона |
+| size/screen-width | 1440 | 390 | ширина экранного фрейма |
+
 ## Примитивы (Primitives)
 
 - moon/100–900 (основной, 9 оттенков): #DCE6FF, #BCCEFF, #9BB7FF, **#7AA2FF**, #5B86F0, #4269D6, #3150AD, #233B82, #18285A
@@ -88,6 +107,10 @@
 | Tsukiyo/Body | Inter Regular | 16 / 24 | `9d18b55bca79a5a365bf8bb8ab40a3ff4dba713e` | основной текст |
 | Tsukiyo/Small | Inter Regular | 14 / 20 | `968834c4b51dde356eeab217d098624923f15352` | подписи, helper, мета |
 | Tsukiyo/Caption | Inter Regular | 12 / 16 | `e5a9b6068b5725c35406035120c909dfaa42e633` | мелкие подписи |
+| Tsukiyo/Label | Inter Medium | 14 / 20 | `d3cff7b2da07e2c7997d0b4498f97700bd4d5c63` | подписи полей, табы, чипы, шаги |
+| Tsukiyo/Button | Inter Semi Bold | 16 / 24 | `567c14a2e4220db15c1fbcf5ea739a71d521e50d` | подписи кнопок, названия курсов |
+
+Размер и высота строки `Display`, `H1`–`H3` привязаны к переменным `type/*` коллекции Platform: на мобилке Display 40/48, H1 28/36, H2 24/32, H3 20/28. Inter-стили одинаковые на обеих платформах.
 
 Шрифтовой стиль Cormorant — `SemiBold` (без пробела), Inter — `Regular` / `Semi Bold` (с пробелом). Перед правкой текста загружай шрифт.
 

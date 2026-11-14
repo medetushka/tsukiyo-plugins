@@ -60,3 +60,51 @@
 ## Интерактивность мастеров
 
 Button, Chip, Tab и Input уже связаны interactive components: hover и press внутри самого компонента. В прототипе на экране достаточно ставить инстанс в State=Default.
+
+## Добавлено в 1.1.0
+
+### Бренд и формы
+
+| Компонент | Тип | Node id | Key | Свойства |
+|---|---|---|---|---|
+| Logo | set (2) | `91:5322` | `11c77011297ab746b34f8f4f2558f2a621d9aec3` | Type: Full (полумесяц + wordmark), Mark (полумесяц 32) |
+| Text area | set (5) | `92:5175` | `189eeb34a5ff8252f78f24679c42d1814d97eae2` | State: Default, Focus, Filled, Error, Disabled · ширина 400, поле 128 |
+| Scrollbar | component | `92:5113` | `cccf390fa8554cc25edce819025a55ee3c58886b` | 4 × 80, растягивается по высоте |
+
+### Навигация
+
+| Компонент | Тип | Node id | Key | Свойства |
+|---|---|---|---|---|
+| Pagination/Item | set (8) | `92:5196` | `f4ee40b342539d5788b339bd03e8c70a04b8072f` | Type: Number, Ellipsis, Prev, Next · State: Default, Hover, Active (Number), Disabled (Prev/Next) · Page (text) · 40 × 40 |
+| Pagination | component | `92:5197` | `7fb3a78675c4fef8ae35cc90e10987b3bdc1b149` | Prev · 1 · 2 · 3 · … · 12 · Next; номера меняются свойством Page у вложенных Item |
+
+### Data display
+
+| Компонент | Тип | Node id | Key | Свойства |
+|---|---|---|---|---|
+| Avatar | set (3) | `93:5142` | `2492bb2031026a90385d05e3cf73158f8de2094d` | Size: S 32, M 40, L 64 · Initials (text) |
+| Badge | set (5) | `93:5153` | `b6f4ae705d9ac9eef4cfdc09bf0a15c663eb5660` | Type: Accent, Success, Warning, Error, Neutral · Label (text) |
+| Rating | set (5) | `93:5214` | `a3c10215335d1855de50baaad21017a96d09b4be` | Value: 1–5 · Show score (bool) |
+| Divider | set (2) | `93:5217` | `ecc315527f0e92eb758f61c9b569793503fc529a` | Orientation: Horizontal, Vertical |
+| Tooltip | set (2) | `93:5226` | `8f382de72c19388ef182cff7b4071f925f02d726` | Position: Top, Bottom · Text (text) |
+
+### Карточки
+
+| Компонент | Тип | Node id | Key | Свойства |
+|---|---|---|---|---|
+| Achievement card | set (2) | `94:5175` | `63008bf9f4fc675f600bf887672cd7961cdaac81` | State: Unlocked, Locked · Title, Description (text) · ширина 280 |
+| Review card | component | `94:5176` | `5e7c64c2d2e8dec5182b9f73fe38a58bc5a509ad` | Name, Text, Date (text) · ширина 400 |
+| Stat card | component | `94:5197` | `84e232f37ca6791ba4965867cb8dfebd7e7f344a` | Value, Label (text) · Icon (instance swap) · ширина 180 |
+
+### Мобилка
+
+| Компонент | Тип | Node id | Key | Свойства |
+|---|---|---|---|---|
+| Status bar | component | `95:5179` | `fe618e461700fe9ef04f6cb737a37f2e2220b025` | 390 × 44 |
+| App bar | set (2) | `95:5204` | `dbdab36b7040f254ebe4dc5ecf9be2b3102d7145` | Type: Main (`95:5185`), Back (`95:5196`) · Title (text) · 390 × 56 |
+| Tab bar/Item | set (2) | `95:5213` | `a4d423c52b7ff873d99649deac67374e7eea781b` | State: Default, Active · Label (text) · Icon (instance swap) · 88 × 56 |
+| Tab bar | component | `95:5214` | `9f27d700de6514a73496c6cdcab0b01770886b07` | 390 × 91, 4 пункта + home indicator |
+| Bottom sheet | component | `95:5238` | `12f18d1213b48f4295e261e9b50fe311c5d23c43` | Title, Text (text) · Destructive + Text кнопки · 390 |
+| Chat button | component | `95:5246` | `d29507f2eb4ab6f88bb46b9694fde09e13ffcc8f` | 56 × 56, `Glow/Button` |
+
+Пример мобильного экрана, собранного только из инстансов: `Home / Mobile / Default` (`95:5253`) в секции Design / Mobile.

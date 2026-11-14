@@ -4,7 +4,8 @@
 
 - Экраны лежат на странице **Design** в секциях `Design / <Module>`: Sign in, Onboarding, Home, Offer, Core feature, Profile.
 - Имя фрейма: `Module / Screen / State`, например `Sign in / Login / Error`, `Offer / Checkout / Success`.
-- Фрейм 1440 × 900 (или выше по контенту), заливка `color/bg`, сетка `Grid/Desktop 12 col`.
+- Десктоп: фрейм 1440 × 900 (или выше по контенту), заливка `color/bg`, сетка `Grid/Desktop 12 col`, мода Platform = Desktop.
+- Мобилка: фрейм 390 × 844 (или выше по контенту), заливка `color/bg`, мода Platform = Mobile, имя `Module / Mobile / State`, секция `Design / Mobile`.
 - Рядом с секцией модуля — фрейм `Research notes / <Module>` с выводами ресёрча.
 
 ## Шаблоны
@@ -16,6 +17,18 @@
 | App page | Home, Catalog, Course, Profile | Header Type=User → контент по сетке 12 колонок с полями 80 → Footer |
 | Lesson | Core feature | Header User → слева список Lesson item (4 колонки) → справа плеер/вопрос (8 колонок) |
 | Overlay | подтверждение, выход | Modal 480 по центру поверх `color/scrim`; в прототипе — Open overlay, центр, закрытие по клику снаружи |
+
+## Шаблоны мобилки (390)
+
+| Шаблон | Структура |
+|---|---|
+| Mobile page | вертикальный auto layout: Status bar → App bar (Main на корневых, Back на вложенных) → Content (padding `layout/margin`, gap `spacing/24`) → Tab bar в конце; Chat button абсолютом в правом нижнем углу, 16 над Tab bar |
+| Mobile auth | Status bar → Logo Mark по центру → H1 → Input-ы во всю ширину → Primary во всю ширину → Text-ссылки; без Illustration/Night и без Tab bar |
+| Mobile list | App bar Back + Input Search → Chip-фильтры в строку → Course card 1 в ряд → Button Secondary «Показать ещё» вместо Pagination |
+| Mobile lesson | App bar Back (название урока) → видео/вопрос во всю ширину → Progress bar → Primary снизу; Tab bar скрыт |
+| Mobile confirm | экран + `color/scrim` + Bottom sheet снизу (OVERLAY, позиция Bottom) |
+
+Пример: `Home / Mobile / Default` (`95:5253`) — Status bar, App bar Main, приветствие H1, Course card Continue, 2 Stat card, Achievement card ×2, Tab bar, Chat button.
 
 ## Обязательные состояния модуля
 
