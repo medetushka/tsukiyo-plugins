@@ -1,11 +1,11 @@
 ---
 name: tsukiyo-design-system
-description: "v1.2.0 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
+description: "v1.2.1 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
 ---
 
 # Дизайн-система Tsukiyo — как собирать макеты
 
-Tsukiyo (月夜, «лунная ночь») — учебная платформа. Настроение: ночное небо, луна, тонкие красные линии.
+Tsukiyo (月夜, «лунная ночь») — учебная платформа. Настроение: ночное небо, чистая полная луна, редкие красные акценты (трещина ошибки, ошейник Ёру).
 Файл-источник: Karsakbayev Medet — Tsukiyo, fileKey `ASsAM4YvBYzXIcNnqAA16j`.
 Страницы файла: **Design System** (мастер-компоненты, id `16:49`), **Design** (экраны, id `21:2002`), **UX Research**.
 
@@ -97,7 +97,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 | Подтверждение, фильтры, выбор на мобилке | Bottom sheet | снизу поверх `color/scrim` |
 | ИИ-помощник по уроку | Chat button | правый нижний угол, один на экран |
 | Пусто / ничего не найдено | Empty state | внутри Mascot: Mood=Sleeping — пусто, Mood=Sad — ничего не найдено |
-| Иллюстрация слева на экранах входа (десктоп) | Illustration/Night | половина экрана 720 × 900 |
+| Иллюстрация слева на экранах входа (десктоп) | Illustration/Night | половина экрана 720 × 900; луна всегда чистая — ничего поверх неё не рисовать |
 | Индикатор фазы/прогресса в виде луны | Moon/Phase | New → Full |
 | Загрузка | Moon/Loader | Frame 1–8 (анимация через smart animate) |
 | Маскот Ёру (чёрная кошка) | Mascot | Mood: Happy — успех, Thinking — загрузка и ИИ-помощник, Sad — ошибка, Sleeping — пусто |

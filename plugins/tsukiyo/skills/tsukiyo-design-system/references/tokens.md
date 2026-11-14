@@ -30,7 +30,7 @@
 | color/success | → green/500 #5FD3A4 | `5e91d660041f175b935951cad5e403c5aca854ac` | успех |
 | color/warning | → amber/500 #F2B84B | `f63bf4f1f97ef175c31ef0597b2f23226477a2cb` | предупреждения, блокировка |
 | color/info | → sky/500 #4FC3F7 | `9a6126c43bc0697b5bd84e6415ad3696c31e8176` | информация |
-| color/crimson | → crimson/500 #B0213A | `94d1ae5af1020acd00b5d9ae03b170d3863062ca` | декор: тонкие красные линии |
+| color/crimson | → crimson/500 #B0213A | `94d1ae5af1020acd00b5d9ae03b170d3863062ca` | красные акценты: ошейник Ёру, нос маскота; не поверх луны |
 | color/scrim | #03050F @72% | `e342f7714c3537df90630556650ec2beb3ff846c` | затемнение под модалкой |
 | color/white | #FFFFFF | `e44495e57ca8cef054b26f62f29105e5427639fe` | только кнопка Social (Google) |
 | color/black | #000000 | `110e35387b88600eeb2994493776f5fac2b489e6` | служебный |
