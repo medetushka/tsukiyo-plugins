@@ -1,6 +1,6 @@
 ---
 name: tsukiyo-design-system
-description: "v1.1.0 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
+description: "v1.1.1 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
 ---
 
 # Дизайн-система Tsukiyo — как собирать макеты
@@ -26,7 +26,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 | Фрейм | 1440 × 900 (выше — по контенту) | 390 × 844 (выше — по контенту) |
 | Мода `Platform` на фрейме | `Desktop` | `Mobile` |
 | Поля страницы `layout/margin` | 80 | 16 |
-| Сетка | `Grid/Desktop 12 col` | 4 колонки, поля 16, gutter 16 |
+| Сетка | `Grid/Desktop 12 col` | `Grid/Mobile 4 col` (4 колонки, поля 16, gutter 16) |
 | Навигация | Header + Footer | Status bar + App bar сверху, Tab bar снизу |
 | Модалка | Modal 480 по центру | Bottom sheet во всю ширину снизу |
 
@@ -95,10 +95,11 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 | Подтверждение на десктопе | Modal | overlay поверх `color/scrim` |
 | Подтверждение, фильтры, выбор на мобилке | Bottom sheet | снизу поверх `color/scrim` |
 | ИИ-помощник по уроку | Chat button | правый нижний угол, один на экран |
-| Пусто / ничего не найдено | Empty state | — |
+| Пусто / ничего не найдено | Empty state | внутри Mascot: Mood=Sleeping — пусто, Mood=Sad — ничего не найдено |
 | Иллюстрация слева на экранах входа (десктоп) | Illustration/Night | половина экрана 720 × 900 |
 | Индикатор фазы/прогресса в виде луны | Moon/Phase | New → Full |
 | Загрузка | Moon/Loader | Frame 1–8 (анимация через smart animate) |
+| Маскот Ёру (чёрная кошка) | Mascot | Mood: Happy — успех, Thinking — загрузка и ИИ-помощник, Sad — ошибка, Sleeping — пусто |
 
 ## Размеры
 
@@ -121,12 +122,12 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 
 ## Чего в системе нет
 
-Светлой темы нет, таблиц нет, графиков нет, маскота нет.
+Светлой темы нет, таблиц нет, графиков нет. Маскот один — Ёру; других персонажей не придумывать.
 Не собирай недостающий компонент из фреймов. Скажи, чего не хватает, и предложи ближайший существующий (например, вместо таблицы — список из Lesson item, вместо графика — Stat card + Progress bar).
 
 ## Порядок работы
 
 1. Правила и каталог отсюда; шаблон экрана — references/patterns.md.
 2. Ключи и id — references/keys.md и references/icons.md; токены — references/tokens.md.
-3. Сборка на странице Design: фрейм 1440 (мода Desktop) или 390 (мода Mobile), имя `Module / Screen / State` (мобилка: `Module / Mobile / State`).
+3. Сборка на странице Design: фрейм 1440 (мода Desktop) или 390 (мода Mobile), имя `Module / Screen / State`, у мобилки то же имя с суффиксом ` · Mobile` (например, `Sign in / Login / Default · Mobile`).
 4. Скриншот экрана и сверка с железными правилами: нет сырых HEX/чисел, нет детачей, одна Primary-кнопка, тач-зоны 44 на мобилке, форматы ₸ и дат.

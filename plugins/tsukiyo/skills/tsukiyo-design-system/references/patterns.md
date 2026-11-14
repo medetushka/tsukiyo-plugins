@@ -5,7 +5,7 @@
 - Экраны лежат на странице **Design** в секциях `Design / <Module>`: Sign in, Onboarding, Home, Offer, Core feature, Profile.
 - Имя фрейма: `Module / Screen / State`, например `Sign in / Login / Error`, `Offer / Checkout / Success`.
 - Десктоп: фрейм 1440 × 900 (или выше по контенту), заливка `color/bg`, сетка `Grid/Desktop 12 col`, мода Platform = Desktop.
-- Мобилка: фрейм 390 × 844 (или выше по контенту), заливка `color/bg`, мода Platform = Mobile, имя `Module / Mobile / State`, секция `Design / Mobile`.
+- Мобилка: фрейм 390 × 844 (или выше по контенту), заливка `color/bg`, мода Platform = Mobile, сетка `Grid/Mobile 4 col`, имя как у десктопного экрана + ` · Mobile` (`Sign in / Login / Default · Mobile`), секция `Design / Mobile`.
 - Рядом с секцией модуля — фрейм `Research notes / <Module>` с выводами ресёрча.
 
 ## Шаблоны
@@ -28,7 +28,7 @@
 | Mobile lesson | App bar Back (название урока) → видео/вопрос во всю ширину → Progress bar → Primary снизу; Tab bar скрыт |
 | Mobile confirm | экран + `color/scrim` + Bottom sheet снизу (OVERLAY, позиция Bottom) |
 
-Пример: `Home / Mobile / Default` (`95:5253`) — Status bar, App bar Main, приветствие H1, Course card Continue, 2 Stat card, Achievement card ×2, Tab bar, Chat button.
+Примеры: `Sign in / Login / Default · Mobile` (`97:5205`) — шаблон Mobile auth; `Home / Dashboard / Default · Mobile` (`95:5253`) — Status bar, App bar Main, приветствие H1, Course card Continue, 2 Stat card, Achievement card ×2, Tab bar, Chat button.
 
 ## Обязательные состояния модуля
 
@@ -45,7 +45,7 @@
 
 - Error формы — `Input State=Error` + при необходимости `Alert Type=Error` над формой.
 - Loading — `Moon/Loader` по центру области или `Button State=Loading`.
-- Empty — компонент Empty state с одним действием.
+- Empty — компонент Empty state с одним действием; у вложенного Mascot Mood=Sleeping, если данных ещё нет, и Mood=Sad, если поиск или фильтры ничего не нашли.
 - Успех после действия — `Toast Type=Success`.
 
 ## Прототип

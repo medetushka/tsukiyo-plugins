@@ -107,4 +107,10 @@ Button, Chip, Tab и Input уже связаны interactive components: hover �
 | Bottom sheet | component | `95:5238` | `12f18d1213b48f4295e261e9b50fe311c5d23c43` | Title, Text (text) · Destructive + Text кнопки · 390 |
 | Chat button | component | `95:5246` | `d29507f2eb4ab6f88bb46b9694fde09e13ffcc8f` | 56 × 56, `Glow/Button` |
 
-Пример мобильного экрана, собранного только из инстансов: `Home / Mobile / Default` (`95:5253`) в секции Design / Mobile.
+Пример мобильного экрана, собранного только из инстансов: `Home / Dashboard / Default · Mobile` (`95:5253`), `Sign in / Login / Default · Mobile` (`97:5205`) в секции Design / Mobile.
+
+### Маскот
+
+| Компонент | Тип | Node id | Key | Свойства |
+|---|---|---|---|---|
+| Mascot (Ёру) | set (4) | `99:5392` | `1a48f70eb3aa97748ad0d73b594d8ad726dee51d` | Mood: Happy, Thinking, Sad, Sleeping · 120 × 120, масштабировать целиком (Scale): 120 / 64 / 40 |

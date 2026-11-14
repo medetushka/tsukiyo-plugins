@@ -124,5 +124,6 @@
 | Tsukiyo/Glow/Moon | `9f5541391fd359fbca8d2aa5a477d56a8bdf0c3c` | луна, иллюстрация |
 | Tsukiyo/Shadow/Card | `6c48fdaaf5f44e2d8a0b08d1f7c18b1b35430482` | карточки, модалки |
 | Grid/Desktop 12 col | `34f73d8027b24ff26b5a83265bb1e87088d3dff0` | на каждом экранном фрейме 1440 |
+| Grid/Mobile 4 col | `93f9ab2592d10fb06f23049bb8e83478a4cc05f4` | на каждом мобильном фрейме 390 |
 
 Применение: `node.setEffectStyleIdAsync(style.id)`, `frame.setGridStyleIdAsync(style.id)`, `text.setTextStyleIdAsync(style.id)`.

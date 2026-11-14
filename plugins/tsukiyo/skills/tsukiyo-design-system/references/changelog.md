@@ -19,3 +19,10 @@
 * Новые компоненты: Logo, Text area, Scrollbar, Pagination, Avatar, Badge, Rating, Divider, Tooltip, Achievement card, Review card, Stat card, Status bar, App bar, Tab bar, Bottom sheet, Chat button.
 * Пак из 26 иконок (references/icons.md).
 * Правила 12–15: иконки, логотип, мобилка, пагинация. Шаблоны мобильных экранов в patterns.md.
+
+## 1.1.1 — 14.11.2026
+
+* Стиль сетки Grid/Mobile 4 col.
+* Нейминг мобилки: имя десктопного экрана + « · Mobile», чтобы экраны одного модуля не путались.
+* Маскот Ёру — чёрная кошка, компонент Mascot с 4 настроениями.
+* Empty state: маскот Ёру вместо луны (Sleeping — пусто, Sad — ничего не найдено).
