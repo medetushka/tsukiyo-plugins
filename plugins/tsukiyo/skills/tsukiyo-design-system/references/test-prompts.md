@@ -31,7 +31,7 @@
 | 10 | Собери ошибку оплаты на мобилке | Alert Error над формой + трещина у поля карты; текст «что + как исправить»; не Toast | 1.3.0 |
 | 11 | Собери мобильное подтверждение удаления аккаунта | Modal по центру (не Bottom sheet), Destructive + Text | 1.3.1 (в 1.3.0 крестик Modal был вектором 16 px; теперь Navigation / Close в зоне 44) |
 | 12 | Покажи 3 уведомления подряд после сохранения | Toast по одному, не стопкой | 1.3.0 |
-| 13 | Собери мобильную ошибку регистрации `Sign in / Sign up / Error · Mobile` | Input Password Error (трещина), Password/Strength, Checklist/Password с Unmet, Checkbox согласия | 1.4.1 (в 1.4.0 подпись Checkbox State=Error не была привязана к Label — исправлено в мастере) |
+| 13 | Собери мобильную ошибку регистрации `Sign in / Sign up / Error · Mobile` | Input Password Error (трещина), Password/Strength, Checklist/Password с Unmet, Checkbox согласия | 1.4.1 (в 1.4.0 подпись Checkbox State=Error не была привязана к Label) |
 | 14 | Собери мобильный шаг онбординга «Интересы» | Progress bar, Chip в несколько строк с зазором ≥ 8, шаблон Mobile onboarding: назад только в App bar, Primary «Далее» во всю ширину, без Tab bar | 1.4.0 |
 | 15 | Собери мобильный тест с неверным ответом | Radio-варианты, неверный ответ — Alert Warning с объяснением (правило 22), не Error | 1.4.0 |
 | 16 | Собери мобильную загрузку Home | Moon/Loader (не спиннер), App bar и Tab bar на месте | 1.3.1 |
