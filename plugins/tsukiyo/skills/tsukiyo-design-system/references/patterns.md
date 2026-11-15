@@ -27,7 +27,7 @@
 | Mobile onboarding | Status bar → App bar Back (шаг назад; на первом шаге без Back) → Progress bar → H1 → варианты во всю ширину (Chip с зазором ≥ 8 или Radio) → Primary «Далее» во всю ширину внизу. Text «Назад» не ставить — назад только в App bar; Tab bar нет. Выбор из длинного списка — Bottom sheet Type=Select |
 | Mobile list | App bar Main, если это корневой экран вкладки Tab bar (каталог); App bar Back — если список вложенный → Input Search → Chip-фильтры в строку → Course card 1 в ряд → Button Secondary «Показать ещё» вместо Pagination |
 | Mobile lesson | App bar Back (название урока) → Video player или вопрос во всю ширину → Progress bar → Primary снизу; Tab bar скрыт |
-| Mobile confirm | экран + `color/scrim` + Bottom sheet снизу (OVERLAY, позиция Bottom) |
+| Mobile confirm | отдельный экран-состояние: копия экрана + слой scrim с `color/scrim` + Bottom sheet снизу. Не через Open overlay: фон overlay в Figma задаётся только сырым цветом, без переменной (правило 3). Переход на него — Move in снизу 400 мс ease-out, закрытие («Применить», «Отмена», тап по scrim) — назад на исходный экран 400 мс ease-in |
 
 Примеры: `Sign in / Login / Default · Mobile` (`97:5205`) — шаблон Mobile auth; `Home / Dashboard / Default · Mobile` (`95:5253`) — Status bar, App bar Main, приветствие H1, Course card Continue, 2 Stat card, Achievement card ×2, Tab bar, Chat button.
 
@@ -57,13 +57,14 @@
 | Связь | Transition | Длительность | Easing |
 |---|---|---|---|
 | Обычный переход между экранами | Smart animate | 250 мс (`motion/base`) | ease-out |
+| «Назад» (App bar Back, Text «Назад») | Smart animate | 250 мс | ease-out — отдельной анимации «назад» нет |
 | Из Tab bar, Tabs, Header | Smart animate | 150 мс (`motion/fast`) | ease-out |
 | На экран с Bottom sheet | Move in снизу | 400 мс (`motion/slow`) | ease-out |
 | Modal (Open overlay) | Dissolve | 250 мс | ease-out |
 | На Success / Completed / Welcome | Smart animate | 400 мс | ease-in-out |
 | Hover и Pressed внутри компонентов | Smart animate | 150 / 100 мс | ease-out |
 - Каждый модуль — свой flow starting point; плюс общий `End-to-end: Sign up → Onboarding → Home → Offer → Core → Profile`.
-- Без тупиков: с каждого экрана есть путь дальше или назад.
+- Без тупиков: с каждого экрана есть путь дальше или назад. Мобильные экраны ведут только на мобильные, десктопные — только на десктопные; нет нужного экрана — собери его, а не ссылайся на другую платформу.
 
 ## Тексты и форматы
 
