@@ -130,3 +130,10 @@ Button, Chip, Tab и Input уже связаны interactive components: hover �
 | Switch | `40:2496` | `e6b09009bc64ba6e618371bdaf7772c282152ebf` | новое свойство Label (text); высота ≥ 44 |
 | Bottom sheet | set `112:6348` | `015b461e68ec6176245c322efa9699eb3148137d` | теперь набор: Type=Confirm (`95:5238`), Type=Select (`112:6328`, список Radio + Primary «Применить») · Title, Text (Confirm), Question (Select, по умолчанию «Выберите вариант») |
 | Button Type=Text | `30:21700` | — | высота 44 (с 1.3.1) |
+
+### Добавлено в 1.6.0
+
+| Компонент | Node id | Key | Свойства |
+|---|---|---|---|
+| Chat message | set `133:7090` | `2fb218dbd1d229a13795280ccd666d93f84f3824` | Author: User (`133:7053`), Assistant (`133:7057`), Assistant typing (`133:7065`) · Text, Time (text) · ширина 358 |
+| Input Type=Password | `30:21647` | — | с 1.6.0 Label и Show helper привязаны к свойствам (раньше работали только у Type=Text); у Search подписи нет |

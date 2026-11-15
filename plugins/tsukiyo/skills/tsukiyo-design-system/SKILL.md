@@ -1,6 +1,6 @@
 ---
 name: tsukiyo-design-system
-description: "v1.5.2 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
+description: "v1.6.0 — Сборка макетов в Figma на дизайн-системе Tsukiyo (edtech, ночь/луна, тёмная тема, десктоп 1440 и мобилка 390): каталог компонентов, иконки, логотип, токены цвета/отступов/радиусов, моды Desktop/Mobile, текстовые стили, правила консистентности. Use when building any Tsukiyo screen in Figma for desktop or mobile — sign in, sign up, onboarding, home, catalog, course, checkout, lesson, quiz, profile, settings, modal, bottom sheet, toast, empty/error/loading state; when choosing a component, icon, color, spacing or text style; when reviewing a Tsukiyo mockup. Собери экран, сделай мобильную версию, сделай макет, добавь состояние ошибки."
 ---
 
 # Дизайн-система Tsukiyo — как собирать макеты
@@ -66,6 +66,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 26. **Чем чаще действие, тем меньше движения.** Навигация, «Следующий вопрос», переключение вкладок — `motion/fast` или мгновенно. Празднование (Mascot Happy, загорающийся Badge «Новое», следующая фаза Moon/Phase) — только для редких событий. Причина: «frequency of use» — анимация, которую видишь сто раз в день, раздражает.
 27. **Отклик и подтверждение.** Нажатие — Button Pressed за 100 мс. После главного действия — одно вторичное подтверждение (Toast, фаза луны, бейдж), не больше одного. Ответ дольше 400 мс — сразу `Moon/Loader` или `Button State=Loading`. Причина: «follow through» и порог Доэрти — пользователь должен видеть, что действие принято.
 28. **Ввод: группы и терпимость.** Длинные числа — группами (закон Миллера): карта `4400 0000 0000 0000` по 4, телефон `+7 707 123 45 67`, ИИН `990101 300 123`. Поле принимает разные форматы (закон Постела): дата «15 янв 2026» и «15.1.26», телефон с `8` или `+7`; показывай нормализованное значение (`15.01.2026`), пример формата — в helper; ошибку из-за формата не показывай.
+29. **Новый вариант компонента — проверь привязки.** Клонировал вариант в мастере — убедись, что тексты и видимость в нём привязаны к свойствам набора (Label, Show helper, Text…), иначе свойство меняется, а на экране старый текст. Причина: так ломались Checkbox (1.4.0) и Input Password (1.5.2).
 
 Подробности и источники — `references/research.md`.
 
@@ -113,6 +114,7 @@ Tsukiyo (月夜, «лунная ночь») — учебная платформ�
 | Подтверждение на десктопе | Modal | overlay поверх `color/scrim` |
 | Выбор, фильтры, обратимое подтверждение на мобилке | Bottom sheet | Type=Select — список Radio + Primary «Применить»; Type=Confirm — Destructive + Text; поверх `color/scrim`; необратимое — Modal |
 | ИИ-помощник по уроку | Chat button | правый нижний угол, один на экран |
+| Сообщения в чате ИИ-помощника | Chat message | Author=User справа, Author=Assistant слева, Author=Assistant typing — Mascot Thinking + «Луна думает…» |
 | Пусто / ничего не найдено | Empty state | внутри Mascot: Mood=Sleeping — пусто, Mood=Sad — ничего не найдено |
 | Иллюстрация слева на экранах входа (десктоп) | Illustration/Night | половина экрана 720 × 900; луна всегда чистая — ничего поверх неё не рисовать |
 | Индикатор фазы/прогресса в виде луны | Moon/Phase | New → Full |
