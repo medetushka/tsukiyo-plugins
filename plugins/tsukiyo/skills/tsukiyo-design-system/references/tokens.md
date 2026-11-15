@@ -114,6 +114,20 @@
 
 Шрифтовой стиль Cormorant — `SemiBold` (без пробела), Inter — `Regular` / `Semi Bold` (с пробелом). Перед правкой текста загружай шрифт.
 
+## Движение (motion)
+
+В Figma нет переменных для длительности и easing, поэтому значения фиксированы здесь и применяются в настройках переходов прототипа.
+
+| Токен | Значение | Где |
+|---|---|---|
+| motion/fast | 150 мс | hover, Tab bar, вкладки, Header |
+| motion/press | 100 мс | Button Hover → Pressed (ON_PRESS) |
+| motion/base | 250 мс | переход между экранами, Modal, Toast |
+| motion/slow | 400 мс | Bottom sheet, Success, достижение |
+| easing/enter | ease-out | появление |
+| easing/exit | ease-in | исчезновение |
+| easing/move | ease-in-out | большие переходы, празднование |
+
 ## Эффекты и сетка
 
 | Стиль | Key | Где |

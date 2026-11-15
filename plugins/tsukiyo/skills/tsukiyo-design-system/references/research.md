@@ -15,6 +15,9 @@
 | Bottom sheet или модалка | Material 3: модальный bottom sheet — замена меню и простых диалогов на мобилке, для списков действий и выбора. SAP Fiori (на базе M3): не использовать bottom sheet, чтобы заставить пользователя срочно что-то сделать | Bottom sheet — выбор, фильтры, список действий, обратимые подтверждения (выход). Необратимое (удалить аккаунт, оплатить) — Modal по центру и на мобилке | 20 |
 | Пустые состояния | Carbon: empty state заменяет тот элемент, который был бы на месте; главная кнопка страницы не переезжает в пустую область. Primer, eBay: сказать, что пусто и почему, и дать следующий шаг | Empty state стоит на месте пустого блока; текст = что пусто + почему + что сделать; кнопка — только следующий шаг, а не дубль главной кнопки страницы | 21 |
 | Описания компонентов | В Material 3 Design Kit у каждого компонента в Figma есть описание с правилом применения («Navigation bars provide access to three to five destinations») | Уже делаем: у всех 41 компонента Tsukiyo есть Description «когда использовать» — подтверждение практики | — |
+| Движение | Видео «20 Principles of UX & Animation»: 12 принципов анимации Disney (slow in & slow out, snappy timing, follow through) | Три длительности 150 / 250 / 400 мс, ease-out для появления, короткий отклик Pressed, одно вторичное подтверждение | 25, 27 |
+| Частота использования | То же видео: чем чаще действие, тем меньше анимации | Навигация и вкладки — 150 мс; празднование только для редких событий | 26 |
+| Ввод | Законы UX: Миллер (группировать), Постел (принимать неаккуратный ввод), порог Доэрти (400 мс) | Карта, телефон и ИИН группами; терпимые форматы даты и телефона; Loader после 400 мс | 27, 28 |
 
 ## Что не взяли (пока)
 
@@ -24,6 +27,7 @@
 | Отдельный «учебный» домен токенов (Core / Learning / Component) | Wonder Blocks, Khan Academy | Хорошо для edtech: `color/learning/correct`, `streak`, `due`. Пока покрываем `color/success`, `color/warning` и Badge; вернуться, если появятся 3+ учебных состояния |
 | Тач-зона 48 вместо 44 | Material 3 | Опираемся на 44 (Apple) как минимум; кнопки и поля у нас и так 48 |
 | Toast внизу над нижней навигацией | Material 3 snackbar | Внизу справа у нас Chat button; Toast на мобилке остаётся сверху |
+| Solid drawing in 3D (перспектива и объём у карточек), moving in arcs (элементы летят по дуге) | Видео «20 Principles of UX & Animation» | Не вяжутся со спокойным ночным стилем и учебным продуктом; негде применить |
 
 ## Источники
 
@@ -41,3 +45,5 @@
 - Atlassian — Design tokens: https://atlassian.design/tokens/design-tokens
 - Khan Academy — Wonder Blocks color system: https://blog.khanacademy.org/how-we-rebuilt-khan-academys-color-system-from-the-ground-up
 - Figma Community: Material 3 Design Kit, Simple Design System (библиотеки, доступные файлу Tsukiyo)
+- Видео «20 Principles of UX & Animation (in under 30 seconds)» — прислано пользователем, 15.11.2026
+- Laws of UX (Фиттс, Хик, Миллер, Постел, Доэрти, Якоб): https://lawsofux.com

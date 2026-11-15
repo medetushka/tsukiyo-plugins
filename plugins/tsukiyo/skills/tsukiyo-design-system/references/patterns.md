@@ -52,6 +52,16 @@
 ## Прототип
 
 - Связи: `setReactionsAsync` с NAVIGATE между экранами, OVERLAY для Modal, CLOSE для закрытия, AFTER_TIMEOUT для Loading → Success.
+- Переходы (правила 25–27):
+
+| Связь | Transition | Длительность | Easing |
+|---|---|---|---|
+| Обычный переход между экранами | Smart animate | 250 мс (`motion/base`) | ease-out |
+| Из Tab bar, Tabs, Header | Smart animate | 150 мс (`motion/fast`) | ease-out |
+| На экран с Bottom sheet | Move in снизу | 400 мс (`motion/slow`) | ease-out |
+| Modal (Open overlay) | Dissolve | 250 мс | ease-out |
+| На Success / Completed / Welcome | Smart animate | 400 мс | ease-in-out |
+| Hover и Pressed внутри компонентов | Smart animate | 150 / 100 мс | ease-out |
 - Каждый модуль — свой flow starting point; плюс общий `End-to-end: Sign up → Onboarding → Home → Offer → Core → Profile`.
 - Без тупиков: с каждого экрана есть путь дальше или назад.
 
